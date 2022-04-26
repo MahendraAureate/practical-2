@@ -40,7 +40,7 @@ export default {
     },
     methods: {
         removeStudent(studid){
-            this.$emit('productRemoveId', studid);
+            this.$emit('studentRemoveId', studid);
 
             // state.cart = state.cart.filter( item => {
             //     return item.product.id !== product.id
