@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "fname": "Atul",
+        "lname": "Bhavsar",
+        "age": "10 Years",
+        "email": "atul@gmail.com",
+        "phone": "9685958698",
+        "avatar": "https://i.postimg.cc/d3ykpLs8/stud1.jpg"
+    },
+    {
+        "id": 7,
+        "fname": "Foram",
+        "lname": "Dobariya",
+        "age": "20 Years",
+        "email": "sanju@gmail.com",
+        "phone": "9856985698",
+        "avatar": "https://i.postimg.cc/QtWp5XBn/stud7.jpg"
+    },
+    {
+        "id": 2,
+        "fname": "Arun",
+        "lname": "Bhagat",
+        "age": "16 Years",
+        "email": "aurun@gmail.com",
+        "phone": "9865896586",
+        "avatar": "https://i.postimg.cc/DfHMtZdm/stud2.jpg"
+    },
+    {
+        "id": 3,
+        "fname": "Rajesh",
+        "lname": "Chaudhry",
+        "age": "7 Years",
+        "email": "raju@gmail.com",
+        "phone": "9655698565",
+        "avatar": "https://i.postimg.cc/fRhgRrPN/stud3.jpg"
+    },
+    {
+        "id": 4,
+        "fname": "Ruchita",
+        "lname": "Ghadiya",
+        "age": "22 Years",
+        "email": "sanju@gmail.com",
+        "phone": "9586958695",
+        "avatar": "https://i.postimg.cc/zGbW4z7D/stud5.jpg"
+    },
+    {
+        "id": 5,
+        "fname": "Naresh",
+        "lname": "Patil",
+        "age": "13 Years",
+        "email": "naresh@gmail.com",
+        "phone": "9865989658",
+        "avatar": "https://i.postimg.cc/V6bV6Pzz/stud4.jpg"
+    },
+    {
+        "id": 6,
+        "fname": "Jagruti",
+        "lname": "Vekariya",
+        "age": "24 Years",
+        "email": "sanju@gmail.com",
+        "phone": "9658965896",
+        "avatar": "https://i.postimg.cc/5N5SnNsh/stud6.jpg"
+    }
+]

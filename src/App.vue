@@ -1,28 +1,118 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <StudentRegi/>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import StudentRegi from './components/StudentRegi.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    name: 'App',
+    components: {
+        StudentRegi
+    }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #32475b;
+    margin-top: 60px;
+    font-size: 15px;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    margin-bottom: 15px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.student__parent {
+    position: relative;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/***************** Responsive ******************/
+
+@media screen and (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    /* .student__inner {
+        height: 250px !important;
+    } */
+}
+
+@media screen and (max-width:767px) {
+    .student__parent {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .student__parent {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .student__image{
+        height: 130px;
+    }
+    .student__inner{
+        margin-bottom: 15px;
+    }
 }
 </style>
