@@ -1,11 +1,16 @@
 <template>
 <div class="container">
         <div class="row"> 
-            <studentCard class="student__parent" v-for="student in students" :key="student.id" :student="student" @studentRemoveId="studentRemoveId"/>
+            <template v-if="students.length">
+                <!-- {{student.length}} -->
+                <studentCard class="student__parent" v-for="student in students" :key="student.id" :student="student" @studentRemoveId="studentRemoveId"/>
+            </template>
+            <template v-else>
+                <div class="not__available">
+                    Data not available
+                </div>
+            </template>
         </div>
-        <pre style="text-align: left;">
-            <!-- {{students}} -->
-        </pre>
     </div>
 </template>
 
@@ -13,6 +18,8 @@
 
 import studentCard from './studentCard.vue'
 import studentData from '../data/StudentData.json'
+
+
 export default {
     name: 'StudentRegi',
     components:{
@@ -41,6 +48,8 @@ export default {
                 return item.id !== studid.id
             });
 
+            
+
         }
     },
     
@@ -66,7 +75,11 @@ li {
 a {
     color: #42b983;
 }
-
+.not__available{
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
 
 
 </style>

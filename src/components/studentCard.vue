@@ -50,6 +50,7 @@ export default {
             // this.studentData.splice(student, 1);
             // console.log('this.studentData ::=> ', this.studentData);
         }
+
     },
 
 }
