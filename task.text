@@ -1,0 +1,11 @@
+Student Register										
+Overview: Create a component which accepts student data [Name, age, email, phone, image(static)] as props & manage to remove / update student records from the component using emit										
+										
+Task1: Write basic component and register it with best naming standard of Vue										
+Task2: Add JSON to page for students records										
+Task3: Pass records as props to the component										
+Task4: Listen to the prop on component file										
+Task5: Render students card with all the available information										
+Task6: Write a method to perform remove records 										
+Task7: Pass updated list using emit & update the JSON as well (no need to manage it on reload)		
+Task8: Host your practical on GitHub + Netlify
