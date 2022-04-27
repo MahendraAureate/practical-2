@@ -46,9 +46,7 @@ export default {
             this.students = this.students.filter( item => {
                 console.log('hey there ::=> ', item);
                 return item.id !== studid.id
-            });
-
-            
+            });            
 
         }
     },

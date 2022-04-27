@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import studentData from '../data/StudentData.json'
+// import studentData from '../data/StudentData.json'
 
 
 export default {
@@ -35,7 +35,7 @@ export default {
     props:['student'],
     data() {
         return {
-            studentData:studentData
+            // studentData:studentData
         }
     },
     methods: {
