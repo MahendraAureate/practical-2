@@ -1,0 +1,13 @@
+{
+  "studentjson": [
+    {
+      "id": 1,
+      "fname": "Mahendra",
+      "lname": "Patil",
+      "age": "28 Years",
+      "email": "mahendra@gmail.com",
+      "phone": "8988888888",
+      "avatar": "https://i.postimg.cc/d3ykpLs8/stud1.jpg"
+    }
+  ]
+}
