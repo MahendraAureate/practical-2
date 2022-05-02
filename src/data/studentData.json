@@ -8,6 +8,24 @@
       "email": "mahendra@gmail.com",
       "phone": "8988888888",
       "avatar": "https://i.postimg.cc/d3ykpLs8/stud1.jpg"
+    },
+    {
+      "id": 2,
+      "fname": "Mansukh",
+      "lname": "Patil",
+      "age": "28 Years",
+      "email": "mahendra@gmail.com",
+      "phone": "8988888888",
+      "avatar": "https://i.postimg.cc/d3ykpLs8/stud1.jpg"
+    },
+    {
+      "id": 3,
+      "fname": "Mihir",
+      "lname": "Patil",
+      "age": "28 Years",
+      "email": "mahendra@gmail.com",
+      "phone": "8988888888",
+      "avatar": "https://i.postimg.cc/d3ykpLs8/stud1.jpg"
     }
   ]
 }
