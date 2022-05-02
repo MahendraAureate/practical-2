@@ -1,9 +1,8 @@
 <template>
-<div class="container">
+    <div class="container">
         <div class="row"> 
-            <template v-if="students.length">
-                <!-- {{student.length}} -->
-                <studentCard class="student__parent" v-for="student in students" :key="student.id" :student="student" @studentRemoveId="studentRemoveId"/>
+            <template v-if="studentsGetData">
+                <studentCard class="student__parent" v-for="student in studentsGetData" :key="student.id" :student="student" @studentRemoveId="studentRemoveId"/>
             </template>
             <template v-else>
                 <div class="not__available">
@@ -15,9 +14,12 @@
 </template>
 
 <script>
+// const jsonServer = require('json-server')
+
 
 import studentCard from './studentCard.vue'
-import studentData from '../data/StudentData.json'
+// import studentData from '../data/studentData.json'
+// http://localhost:3000/studente
 
 
 export default {
@@ -27,30 +29,43 @@ export default {
     },
     data() {
         return {
-            students: studentData,
-            
+            studentsGetData: []
+            // studentsGetData: studentData,
         }
     },
     methods: {
         studentRemoveId(studid){
-            // console.log('studid ::=> ', studid);
-            // console.log('this.students ::=> ', this.students);
-            
-            // this.students.forEach((value) => {
-            //     console.log('value ::=> ', value.id);
-            //     if (value.id == studid ){
-            //         console.log('Yes')
-            //     }
-            // });
 
-            this.students = this.students.filter( item => {
-                console.log('hey there ::=> ', item);
+            fetch(`http://localhost:3001/studente/${studid.id}`, 
+            {
+                method: 'DELETE', 
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            }).then(resp => {
+                console.log('res ::=> ', resp.data);
+                resp.data;
+            }).catch(error => {
+                console.log(error);
+            });
+                
+           
+            this.studentsGetData = this.studentsGetData.filter( item => {
                 return item.id !== studid.id
             });            
-
+            
         }
     },
-    
+    async created(){
+        await fetch('http://localhost:3001/studente')
+        .then(res => res.json())
+        .then(data => { 
+            console.log('data ::=> ', data);
+            this.studentsGetData = data
+        } )
+        .catch(err => console.log(err.message))
+    }
 }
 </script>
 

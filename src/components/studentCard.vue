@@ -1,5 +1,7 @@
 <template>
     <div>
+
+        
         <span class="student__remove" @click="removeStudent(student)">X</span>
         <div class="student__inner">
             <div class="student__image">
@@ -27,8 +29,6 @@
 </template>
 
 <script>
-// import studentData from '../data/StudentData.json'
-
 
 export default {
     name:'StudentCard',
@@ -41,14 +41,6 @@ export default {
     methods: {
         removeStudent(studid){
             this.$emit('studentRemoveId', studid);
-
-            // state.cart = state.cart.filter( item => {
-            //     return item.product.id !== product.id
-            // });
-
-            // console.log('student ::=> ', studid);
-            // this.studentData.splice(student, 1);
-            // console.log('this.studentData ::=> ', this.studentData);
         }
 
     },

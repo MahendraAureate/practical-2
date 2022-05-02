@@ -1,6 +1,8 @@
 <template>
     <div id="app">
-        <StudentRegistration/>
+        <div class="student_registration">
+            <StudentRegistration/>
+        </div>
     </div>
 </template>
 
@@ -16,13 +18,18 @@ export default {
 </script>
 
 <style>
+html,body{
+    height: 100%;
+}
+.student_registration{
+    padding: 50px 0;
+}
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #32475b;
-    margin-top: 60px;
     font-size: 15px;
 }
 
